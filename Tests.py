@@ -35,34 +35,32 @@
 #
 # number = input("Pleae enter five digit-number")
 #
-# even_elem_number = ""
+# multiplic = 1
 # for i in range (0, int(len(number))):
 #     x = int(number[i])
 #     if x%2 == 0:
-#         even_elem_number = even_elem_number + str(x)
+#         multiplic = multiplic * x
 #
-# multiplic = int(even_elem_number[0])
-# for i in range (1, int(len(even_elem_number))):
-#     x = int(even_elem_number[i])
-#     multiplic = multiplic * x
+#
 #
 # print(multiplic)
 
 
 
-# # 5. Создать программу, выводящую на экран ближайшее к 10 из двух чисел, введенных пользователем. Например, среди
+# 5. Создать программу, выводящую на экран ближайшее к 10 из двух чисел, введенных пользователем. Например, среди
 # чисел 8,5 и 11,45 ближайшее к десяти 11,45.
 
 
-# number_a = input("Please enter first number")
-# number_b = input("Please enter second number")
-#
-# k1 = 10 - float(number_a)
-# k2 = 10 - float(number_b)
-# if k1 > k2:
-#     print(number_b)
-# if k1 < k2:
-#     print(number_a)
+number_a = input("Please enter first number")
+number_b = input("Please enter second number")
+
+k1 = abs(10 - float(number_a))
+k2 = abs(10 - float(number_b))
+print(k1, k2)
+if k1 > k2:
+    print(number_b)
+if k1 < k2:
+    print(number_a)
 
 
 
@@ -73,28 +71,28 @@
 # 6. Создать массив из 10 элементов и проинициализировать его простыми числами в случайном порядке
 
 
-mass = []
-
-def prime_numbers(b):
-    prime_numer_list = []
-
-    for i in range(1, b+1):
-        for l in range(2, i):
-
-            if i%l==0:
-                break
-
-        else:
-            prime_numer_list.append(i)
-    return prime_numer_list
-
-prime_numbers_list = prime_numbers(10000)
-
-import random
-for i in range(0, 9):
-    x = random.randint(0, len(prime_numbers_list))
-    elem = prime_numbers_list[x]
-    mass.append(elem)
-
-print(mass)
+# mass = []
+#
+# def prime_numbers(b):
+#     prime_numer_list = []
+#
+#     for i in range(1, b+1):
+#         for l in range(2, i):
+#
+#             if i%l==0:
+#                 break
+#
+#         else:
+#             prime_numer_list.append(i)
+#     return prime_numer_list
+#
+# prime_numbers_list = prime_numbers(10000)
+#
+# import random
+# for i in range(0, 9):
+#     x = random.randint(0, len(prime_numbers_list))
+#     elem = prime_numbers_list[x]
+#     mass.append(elem)
+#
+# print(mass)
 
