@@ -31,36 +31,36 @@
 #
 # 4. Найти произведение нечетных цифр пятизначного целого числа, введенного пользователем с клавиатуры
 
-4
-
-number = input("Pleae enter five digit-number")
-
-multiplic = 1
-for i in range (0, int(len(number))):
-    x = int(number[i])
-    if (x+1)%2 == 0:
-        multiplic = multiplic * x
-
-
-
-print(multiplic)
-
-
-
-# # 5. Создать программу, выводящую на экран ближайшее к 10 из двух чисел, введенных пользователем. Например, среди
-# # чисел 8,5 и 11,45 ближайшее к десяти 11,45.
+# 4
+#
+# number = input("Pleae enter five digit-number")
+#
+# multiplic = 1
+# for i in range (0, int(len(number))):
+#     x = int(number[i])
+#     if x%2 == 0:
+#         multiplic = multiplic * x
 #
 #
-# number_a = input("Please enter first number")
-# number_b = input("Please enter second number")
 #
-# k1 = abs(10 - float(number_a))
-# k2 = abs(10 - float(number_b))
-# print(k1, k2)
-# if k1 > k2:
-#     print(number_b)
-# if k1 < k2:
-#     print(number_a)
+# print(multiplic)
+
+
+
+# 5. Создать программу, выводящую на экран ближайшее к 10 из двух чисел, введенных пользователем. Например, среди
+# чисел 8,5 и 11,45 ближайшее к десяти 11,45.
+
+
+number_a = input("Please enter first number")
+number_b = input("Please enter second number")
+
+k1 = abs(10 - float(number_a))
+k2 = abs(10 - float(number_b))
+print(k1, k2)
+if k1 > k2:
+    print(number_b)
+if k1 < k2:
+    print(number_a)
 
 
 
