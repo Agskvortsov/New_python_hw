@@ -1,19 +1,20 @@
 # 21 Вывести на экран все простые числа от 1 до 100
 #
-# def prime_numbers(b):
-#
-#     for i in range(1, b+1):
-#         for l in range(2, i):
-#             # if i == 1:
-#             #     print("PC= 1")
-#             if i%l==0:
-#                 break
-#
-#         else:
-#              print('PC=', i)
-#
-#
-# k = prime_numbers(19)
+def prime_numbers(b):
+    prime_numer_list = []
+
+    for i in range(1, b+1):
+        for l in range(2, i):
+
+            if i%l==0:
+                break
+
+        else:
+            prime_numer_list.append(i)
+    return prime_numer_list
+
+k = prime_numbers(1000)
+print(k)
 
 
 # 22 Создать функцию, выводящую на экран случайно сгенерированное 12 ти-значное натуральное число и возвращающую его наибольшую цифру.
@@ -47,22 +48,22 @@
 # 24 Случайным образом программа выбирает целое число от 1 до 10 и предлагает пользователю его угадать. Пользователь вводит
 # число,а программа проверяет его и, если пользователь не угадал, то говорит больше или меньше. После чего опять просит
 # угадать. И так пока пользователь не угадает выбранное число.
-
-import random
-
-d = random.randint(1,10)
-print(d)
-
-x = int(input("Пожалуйста угадайте число"))
-
-while True:
-
-    if x == d:
-        print("Вы угадали")
-        break
-
-    if x > d:
-
-        x = int(input("Не угадали! Выберите число меньше"))
-    if x < d :
-        x = int(input ("Не угадали! Выберите число больше"))
+#
+# import random
+#
+# d = random.randint(1,10)
+# print(d)
+#
+# x = int(input("Пожалуйста угадайте число"))
+#
+# while True:
+#
+#     if x == d:
+#         print("Вы угадали")
+#         break
+#
+#     if x > d:
+#
+#         x = int(input("Не угадали! Выберите число меньше"))
+#     if x < d :
+#         x = int(input ("Не угадали! Выберите число больше"))

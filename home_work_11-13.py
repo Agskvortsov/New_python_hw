@@ -22,7 +22,8 @@
 # print("Cos (", angle3_radians, ") =", cosin_angle3 )
 
 
-# 12
+# 12 Написать функцию, которая рассчитывает сумму всех цифр некоторого трехзначного числа,
+# введенного пользователем в консоли, без использования операторов цикла.
 
 # threedigit_number = input("Please enter three-digit number")
 # symbol_1 = int(threedigit_number[0])
@@ -31,19 +32,28 @@
 # sum_of_digits = symbol_1 + symbol_2 + symbol_3
 #
 # print(sum_of_digits)
+#
+# first_digit = input("Please enter first digit")
 
 
 
 #  13 Пользователь вводит длины катетов прямоугольного треугольника.
 # Написать функцию, которая вычислит и выведет на экран площадь треугольника и его периметр.
 #
-# catet1 = int(input(" Please enter catet 1"))
-# catet2 = int(input("Please enter catet 2"))
-# square_of_triangle = (catet1 * catet2) / 2
-# gipotenusa = math.sqrt (catet1**2 + catet2**2)
-# perimetr = catet1 + catet2 + gipotenusa
-#
-# print("S=", square_of_triangle)
-# print("P=", perimetr)
+catet1 = int(input(" Please enter catet 1"))
+catet2 = int(input("Please enter catet 2"))
+
+import math
+
+def triangle_main_ops(catet1, catet2):
+    square_of_triangle = (catet1 * catet2) / 2
+    gipotenusa = math.sqrt (catet1**2 + catet2**2)
+    perimetr = catet1 + catet2 + math.sqrt(catet1**2 + catet2**2)
+    return square_of_triangle, gipotenusa, perimetr
+
+square_of_triangle = triangle_main_ops(catet1, catet2)
+
+print(square_of_triangle)
+
 
 
